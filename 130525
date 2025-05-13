@@ -1,0 +1,36 @@
+```typescript
+(()=>{
+
+    const nombre:String[] = ['Hugo','Paco','Luis','Pedro','Hector'];
+    const edad:number[] = [35,50,40,18,30];
+
+    let ordenEdad = ( hola:number[] ) => {
+        let max:number = 0;
+        let posM:number = 0;
+        let min:number = 999;
+        let posm:number = 0;
+        for(let i=0; i<hola.length;i++){
+            if(hola[i]>=max){
+                max = hola[i];
+                posM = i;
+            }
+        }
+        for(let i=0; i<hola.length;i++){
+            if(hola[i]<=min){
+                min = hola[i];
+                posm = i;
+            }
+        }
+
+        console.log(hola[posM],nombre[posM])
+        console.log(hola[posm],nombre[posm])
+        
+    }
+
+    ordenEdad(edad);
+
+
+
+})()
+
+```
