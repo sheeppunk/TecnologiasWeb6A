@@ -36,3 +36,16 @@ const addTwoNumbers = (params:{ first:number,second:number }) => {
         })===(30)
     )
 })();
+
+//quitarVocales
+(()=>{
+
+function removeVowels(data:string){
+    return data.replace(/[aeiou]/gi,'')
+}
+
+console.log(
+    `The text without value is:${removeVowels("HolaMundo")} `
+)
+
+})()
